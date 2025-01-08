@@ -1,0 +1,429 @@
+/* General form styling */
+/* General container styles */
+
+body {
+    background-color: black;
+  }
+  .icon-completed {
+    color: #4caf50;
+    margin-right: 10px;
+  }
+  
+  .icon-deleted {
+    color: #f44336;
+    margin-right: 10px;
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  
+  .task-status {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .completed-status {
+    color: #4caf50;
+  }
+  
+  .deleted-status {
+    color: #f44336;
+  }
+  
+  .task-text {
+    flex-grow: 1;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .task-timestamp {
+    font-size: 12px;
+    color: #bbb;
+  }
+  
+  /* Specific Styles for Completed and Deleted Tasks */
+  .task-item.completed {
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .task-item.deleted {
+    background-color: rgba(244, 67, 54, 0.1);
+  }
+  
+  .task-history {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #1f2937; /* Matches Tailwind's bg-gray-800 */
+    border-radius: 0.5rem;
+    color: #e4e4e4; /* Matches Tailwind's text-gray-300 */
+  }
+  
+  .task-history h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #fbbf24; /* Matches Tailwind's text-yellow-400 */
+  }
+  
+  .task-history ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  
+  .task-form {
+    margin-bottom: 2rem; /* Matches Tailwind's mb-8 */
+  }
+  
+  /* Input container */
+  #inp {
+    margin-top: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    background-color: #1f2937; /* Matches Tailwind's bg-gray-800 */
+    border-radius: 9999px; /* Matches Tailwind's rounded-full */
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); /* Matches Tailwind's shadow-inner */
+    overflow: hidden;
+  }
+  
+  /* Input field */
+  #inp input {
+    flex-grow: 1;
+    padding: 1rem 1.5rem; /* Matches Tailwind's px-6 py-4 */
+    color: #ffffff; /* Matches Tailwind's text-white */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    placeholder-color: #6b7280; /* Matches Tailwind's placeholder-gray-500 */
+  }
+  
+  /* Submit button */
+  #inp button {
+    background-color: #fbbf24; /* Matches Tailwind's bg-yellow-400 */
+    color: #000000; /* Matches Tailwind's text-black */
+    padding: 1rem; /* Matches Tailwind's p-4 */
+    border: 1px solid black;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out; /* Matches Tailwind's transition duration-300 ease-in-out */
+  }
+  
+  #inp button:hover {
+    background-color: #fcd34d; /* Matches Tailwind's hover:bg-yellow-300 */
+  }
+  
+  #inp button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #fcd34d, 0 0 0 4px #1f2937; /* Matches Tailwind's focus:ring-2 focus:ring-yellow-300 focus:ring-offset-2 focus:ring-offset-gray-900 */
+  }
+  
+  /* Dropdown container */
+  #btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  /* Dropdowns */
+  #btns select {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ff0000;
+    background-color: #ffffff;
+    color: #1f2937;
+    outline: none;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+  body{
+    margin: 0;padding: 0;
+  }
+  #btns select:focus {
+    border-color: #fbbf24;
+    box-shadow: 0 0 0 2px #fbbf24;
+  }
+  
+  /* Header */
+  header {
+    background: linear-gradient(45deg, red, blue);
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* shadow-md */
+    margin: 0;
+  }
+  .tagline{
+    text-align: right;
+  }
+  
+  /* Inner container */
+  header .max-w-4xl {
+    max-width: 56rem; /* max-w-4xl */
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    display: flex; /* flex */
+    justify-content: space-between; /* justify-between */
+    align-items: center; /* items-center */
+  }
+  
+  /* Title */
+  header h1 {
+    font-size: 2.25rem; /* text-4xl */
+    font-weight: 700; /* font-bold */
+    color: #ffffff; /* text-white */
+  }
+  
+  /* Span inside title */
+  header h1 span {
+    color: #fbbf24; /* text-yellow-400 */
+  }
+  
+  /* Paragraph */
+  header p {
+    color: lightgray; /* text-gray-400 */
+    font-style: italic; /* italic */
+  }
+  
+  .App {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0px;
+    background-color: black; 
+    color: #e4e4e4; /* Light gray for text contrast */
+  }
+  
+  h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    color: #ffdf8b; /* Brand color for the header */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  h1:hover {
+    transform: scale(1.05);
+  }
+  
+  
+  #btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 0rem;
+  }
+
+
+  .task-form {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  
+  .task-form input,
+  .task-form select,
+  .task-form button {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 8px;
+    border: 2px solid #6c757d; /* Neutral border */
+    border-radius: 20px;
+    background-color: #f9f9f9; /* Light background for inputs */
+    color: #333; /* Dark text for readability */
+    font-size: 1rem;
+  }
+  
+
+  .task-form input {
+    padding: 10px;
+    width: 400px;
+  }
+
+  .task-form input:hover {
+    transform: scale(1.05);
+  }
+  .task-form button {
+    margin-left: 10px;
+    background-color:  #5df7d8; /* Green for action buttons */
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-form button:hover {
+    background-color: #5df79b; /* Slightly darker green on hover */
+    transform: scale(1.10);
+  }
+  
+  .task-list {
+    list-style-type: none;
+    padding: 30px 30px 0px 30px ;
+  }
+  
+  .task-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border: 0px solid #6c757d; /* Neutral border for tasks */
+    margin: 10px 0;
+    border-radius: 10px;
+    background-color: #353535; /* Subtle navy background for tasks */
+    color: #e4e4e4; /* Light text for contrast */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+  }
+  
+  .task-list li:hover {
+    transform: scale(1.02); /* Slight zoom effect */
+    background-color: #5b5a5a;
+  }
+  
+  .task-list li.completed {
+    text-decoration: line-through;
+    color: white; /* Soft blue for completed tasks */
+  }
+  
+  .task-list button {
+    background-color: transparent;
+    border: none;
+    color: #ffdf8b; /* Brand color for buttons */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .task-list button:hover {
+    color: #f9e7b8; /* Highlighted color on hover */
+  }
+  
+  .progress-tracker {
+    margin-top: 20px;
+    color: #e4e4e4;
+  }
+  
+  .progress-bar {
+    height: 12px;
+    background: #6c757d; /* Neutral background for progress bar */
+    margin: 20px 24px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+
+  .progress {
+    height: 100%;
+    background: linear-gradient(90deg, #feba01, #8bc34a); /* Gradient green for progress */
+    border-radius: 10px;
+    transition: width 0.3s ease;
+  }
+  .progress-bar:hover {
+    transform: scale(1.01);
+  }
+  
+  .clear-btn {
+    background-color: #dbab0d; /* Red for clear button */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 19px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 0px;
+  }
+  
+  .clear-btn:hover {
+    background-color: #dbab0d8d; /* Darker red on hover */
+    transform: scale(1.12); /* Slight zoom effect */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust task form layout */
+    .task-form {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    /* Adjust input and button width */
+    #inp {
+      width: 100%;
+      margin-top: 10px;
+    }
+  
+    #inp input,
+    #inp button {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust header font size */
+    header h1 {
+      font-size: 1.75rem;
+    }
+  
+    /* Adjust task list layout */
+    .task-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    /* Adjust dropdown container */
+    #btns {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #btns select {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    /* Adjust progress bar */
+    .progress-bar {
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    /* Further reduce font size and padding for smaller screens */
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    .task-form input,
+    .task-form select,
+    .task-form button {
+      font-size: 0.875rem;
+      padding: 8px;
+    }
+  
+    .task-list li {
+      padding: 10px;
+    }
+  
+    .progress-bar {
+      height: 10px;
+    }
+  
+    .clear-btn {
+      font-size: 0.875rem;
+      padding: 8px 16px;
+    }
+  }
+  
+  
+  
+  
+  
