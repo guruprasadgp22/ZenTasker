@@ -1,4 +1,4 @@
-# 🌟 TaskBuddy App
+# 🌟 ZenTasker App
 
 TaskBuddy is a ReactJS-based task management application that helps users efficiently manage their tasks. The app supports adding, updating, and deleting tasks, with all data stored locally in the browser for persistent usage.
 
